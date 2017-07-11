@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Ricky\Desktop\SpellCheck
+"C:\Program Files\JetBrains\CLion 2017.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\Github\project\Clion\SpellCheck
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/Ricky/Desktop/SpellCheck/cmake-build-debug
+-- Build files have been written to: E:/Github/project/Clion/SpellCheck/cmake-build-debug

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Ricky/Desktop/SpellCheck/src/testmain.cpp" "C:/Users/Ricky/Desktop/SpellCheck/cmake-build-debug/CMakeFiles/SpellCheck.dir/src/testmain.cpp.obj"
+  "E:/Github/project/Clion/SpellCheck/src/testmain.cpp" "E:/Github/project/Clion/SpellCheck/cmake-build-debug/CMakeFiles/SpellCheck.dir/src/testmain.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

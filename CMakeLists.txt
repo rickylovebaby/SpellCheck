@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 
 set(SOURCE_FILES
-        include/MyConf.h
 
         src/testmain.cpp)
 
