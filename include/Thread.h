@@ -37,7 +37,7 @@ public:
 			m_arg = arg;
 			_isRunning = true;
 
-			//将线程设置为脱离线程
+			//将线程设置为分离线程
 			if(pthread_attr_setdetachstate(&threadAttr,PTHREAD_CREATE_DETACHED))
 			{
 				std::cout << __DATE__<<" "<<__TIME__<<" "
@@ -47,7 +47,7 @@ public:
 				exit(-1);
 			}
 			//创建线程
-			if(pthread_create(&_threadId,Thread::runInThread,this))
+			if(pthread_create(&_threadId,&threadAttr,Thread::runInThread,this))
 			{
 
 				std::cout << __DATE__<<" "<<__TIME__<<" "
