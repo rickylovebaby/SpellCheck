@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Github/project/Clion/SpellCheck/include/MyMethod.h">
+			<Option target="SpellCheck"/>
+		</Unit>
 		<Unit filename="E:/Github/project/Clion/SpellCheck/src/testmain.cpp">
 			<Option target="SpellCheck"/>
 		</Unit>

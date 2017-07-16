@@ -1,57 +1,13 @@
 //
 // Created by Ricky on 7/7/2017.
 //
-
 #include "MyTask.h"
 #include "MyCache.h"
 #include "MyConf.h"
+#include "MyMethod.h"
 #include <functional>
 #include <algorithm>
 #include <string.h>
-
-inline int MIN(int a, int b ,int c){
-    int ret = (a < b) ? a : b;
-    ret = (ret < c) ? ret : c;
-    return ret;
-}
-
-
-/*
- * 动态规划求解查询词与词频字典中的词的编辑距离
- *
- * memo[i][j]表示第一个字符串的前i个字符与第二个字符串的前j个字符的编辑距离
- *
- *
- * insert: m : n-1
- *
- * remove  m-1 : n
- *
- * replace　m-1 : n - 1
- * */
-int edit_distance_uint_32(const std::vector<uint32_t>& w1, const std::vector<uint32_t>& w2)
-{
-    int a = w1.size();
-    int b = w2.size();
-    int memo[100][100];
-    memset(memo,0x00,100*100*sizeof(int));
-    for(int i = 1; i <= a;++a){
-        memo[i][0] = i;
-    }
-    for(int j = 1; j <= b;++j){
-        memo[0][j] = j;
-    }
-    for(int i = 1; i <= a ;++i){
-        for(int j = 1; j <= b; ++j)
-        {
-            if(w1[i-1] == w2[j-1])
-                memo[i][j] = memo[i-1][j-1];
-            else{
-                memo[i][j]=MIN(memo[i-1][j-1],memo[i][j-1],memo[i-1][j])+1;
-            }
-        }
-    }
-    return memo[a][b];
-}
 
 MyTask::MyTask(MyConf &conf)
     :_queryWord(""),
@@ -114,7 +70,7 @@ void MyTask::excute(MyCache& cache){
 //计算编辑距离
 int MyTask::editDistance(const std::vector<uint32_t> &right)
 {
-    return edit_distance_uint_32(_vecQueryWord,right);
+    return ConvertAlgo::edit_distance_uint_32(_vecQueryWord,right);
 }
 
 void MyTask::satistic(std::set<int> &iset)

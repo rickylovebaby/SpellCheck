@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
 
-        src/testmain.cpp)
+        src/testmain.cpp include/MyMethod.h)
 
 include_directories(include)
 

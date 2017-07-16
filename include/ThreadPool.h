@@ -8,13 +8,14 @@
 #include "MyThread.h"
 #include "MyLock.h"
 #include "MyTask.h"
+#include "MyConf.h"
+#include "MyCacheThread.h"
+#include "MyCondition.h"
 #include <vector>
 #include <string>
 #include <queue>
 #include <map>
-#include "MyConf.h"
-#include "MyCacheThread.h"
-#include "MyCondition.h"
+
 
 
 class ThreadPool{

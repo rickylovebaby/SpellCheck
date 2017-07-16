@@ -1,3 +1,7 @@
+//
+// Created by Ricky on 7/7/2017.
+//
+
 #ifndef SPELLCHECK_MYRESULT_H
 #define SPELLCHECK_MYRESULT_H
 #include <vector>

@@ -1,3 +1,7 @@
+//
+// Created by Ricky on 7/7/2017.
+//
+
 #ifndef SPELLCHECK_MYLOCK_H
 #define SPELLCHECK_MYLOCK_H
 #include <pthread.h>

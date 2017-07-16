@@ -1,3 +1,8 @@
+//
+// Created by Ricky on 7/7/2017.
+//
+
+
 #ifndef SPELLCHECK_MYCACHE_H
 #define SPELLCHECK_MYCACHE_H
 #include <unordered_map>

@@ -1,6 +1,7 @@
 //
 // Created by Ricky on 7/7/2017.
 //
+
 #ifndef SPELLCHECK_MYSOCKET_H
 #define SPELLCHECK_MYSOCKET_H
 #include <string>
@@ -48,7 +49,7 @@ public:
 	int recv_message(void* buf, int len)
 	{
 		std::cout <<"socket:: recv ..."<<std::endl;
-		return recvfrom(_fd,buf,len,0.(struct sockaddr*)&_addr,&_addrLen);
+		return recvfrom(_fd,buf,len,0,(struct sockaddr*)&_addr,&_addrLen);
 		
 	}
 	const struct sockaddr_in get_addr() const {
